@@ -73,8 +73,3 @@ ENV/
 *.pyc
 *.db
 *.pid
-
-# Django Migrations
-**/migrations/**
-!**/migrations
-!**/migrations/__init__.py
