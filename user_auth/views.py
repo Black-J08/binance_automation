@@ -1,4 +1,5 @@
 from django.contrib import auth
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 
 # Create your views here.
@@ -18,6 +19,7 @@ def login(request):
         return render(request, 'login.html')
 
 
+@login_required
 def logout(request):
     if request.method == 'POST':
         auth.logout(request)
