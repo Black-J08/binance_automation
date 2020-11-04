@@ -1,5 +1,5 @@
 """
-ASGI config for binance_automation project.
+ASGI config for crypto_automation project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'binance_automation.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'crypto_automation.settings')
 
 application = get_asgi_application()
