@@ -1,0 +1,27 @@
+.title {
+  float: left;
+  font-size: 26px;
+  text-decoration: none;
+  color: black;
+}
+
+.top-nav {
+  float: right;
+}
+
+.top-nav-li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.top-nav-input-button {
+  background: none;
+  padding: 5px;
+  border: 0px;
+  cursor: pointer;
+  display: inline-block;
+  font: 16px Helvetica, Arial, sans-serif;
+  color: darkcyan;
+  text-decoration: none;
+  margin: 5px;
+}
