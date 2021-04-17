@@ -1,37 +1,11 @@
 {% extends 'base.html' %}
 
 {% block head %}
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'css/index.css' %}">
-    <title>Index</title>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+<title>Index</title>
 {% endblock %}
 
 {% block body %}
 
-    <div>
-
-        <a href="/" class="title">Crypto Automation</a>
-
-        <nav class="top-nav">
-            <ul>
-                
-                {% if user.is_authenticated %}
-                    <li class="top-nav-li">
-                        <a href="/dashboard">Dashboard</a>
-                    </li>
-                    <li class="top-nav-li">
-                        <form action="/accounts/logout/" method="post">
-                            {% csrf_token %}
-                            <input type="submit" class="top-nav-input-button" value="Log Out">
-                        </form>
-                    </li>
-                {% else %}
-                    <li class="top-nav-li">
-                        <a href="/accounts/login">Log In</a>
-                    </li>
-                {% endif %}
-            </ul>
-        </nav>
-
-    </div>
 {% endblock %}
