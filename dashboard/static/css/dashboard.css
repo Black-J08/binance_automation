@@ -1,0 +1,64 @@
+#create-bot-button {
+  float: right;
+  margin: 20px !important;
+}
+
+input {
+  margin: 4px;
+}
+
+select {
+  margin: 4px;
+}
+
+.modal-title {
+  font-weight: 600;
+}
+
+.form-group {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.label-custom {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 4px;
+}
+
+.form-check {
+  padding: 25px;
+}
+
+.ui-autocomplete {
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  max-height: 240px;
+  padding: 5px;
+  margin: 2px;
+  list-style: none;
+  overflow-y: scroll;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.2);
+}
+
+.ui-autocomplete>li>div {
+  display: block;
+  padding: 6px;
+  line-height: 1.5;
+}
+
+.ui-state-hover,
+.ui-state-active,
+.ui-state-focus {
+  text-decoration: none;
+  color: #262626;
+  background-color: #6fabca;
+  cursor: pointer;
+}
+
+.ui-helper-hidden-accessible {
+  display: none;
+}

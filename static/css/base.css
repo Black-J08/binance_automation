@@ -5,3 +5,16 @@ body {
   font-weight: 400;
   line-height: 1.5;
 }
+
+.btn.btn-primary {
+  background: linear-gradient(165deg, #119cba 30%, #0f73a8 90%);
+  border: none;
+  padding: 10px;
+  margin: 5px;
+}
+
+.btn.btn-secondary {
+  border: none;
+  padding: 10px;
+  margin: 5px;
+}

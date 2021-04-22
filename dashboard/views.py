@@ -6,4 +6,5 @@ from django.shortcuts import render
 
 @login_required
 def dashboard(request):
-    return render(request, 'dashboard.html', {'page': 'dashboard'})
+    return render(request, 'dashboard.html', {'page': 'dashboard', 'amountBTC': '0.001', 'amountUSDT': '12'})
+    #using temporary variables representing user's wallet portfolio
