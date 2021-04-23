@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'bot',
     'index',
     'dashboard',
-    'user_auth'
+    'user'
 ]
 
 MIDDLEWARE = [
