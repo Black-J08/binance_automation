@@ -1,25 +1,35 @@
-{% extends "base.html" %} 
+{% extends "base.html" %}
 
 {% block head %}
 <title>Login</title>
-{% endblock %} 
+<style>
+  input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .align-items-center {
+    margin-top: 12%;
+  }
+</style>
+{% endblock %}
 
 {% block body %}
 
-<form action="" method="post">
-{% csrf_token %}
-<div style="text-align: center; margin-top: 15%">
-  <h1>Login</h1>
-  <div>
-    <input type="text" id="login_user" name="login_user" placeholder="Username" />
-  </div>
-  <br />
-  <div>
-    <input type="password" id="login_password" name="login_password" placeholder="Password" />
-  </div>
-  <br />
-  <input type="submit" placeholder="Submit"/>
+<div class="container h-100">
+  <div class="row h-100 justify-content-center align-items-center text-center">
+    <form class="form-signin" action="" method="POST" style="height: 340px; width: 340px;">
+      {% csrf_token %}
+      <h1 class="h3 mb-3 font-weight-normal">Log In</h1>
+      <label for="login_user" class="sr-only">Username</label>
+      <input type="text" id="login_user" name="login_user" class="form-control" placeholder="Username" required
+        autofocus>
+      <label for="login_password" class="sr-only">Password</label>
+      <input type="password" id="login_password" name="login_password" class="form-control" placeholder="Password"
+        required>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </form>
 </div>
-</form>
+</div>
 
 {% endblock %}
